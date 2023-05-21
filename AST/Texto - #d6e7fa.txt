@@ -1,5 +1,0 @@
-Texto -> #d6e7fa
-Background -> #010509
-Botão Primario -> #a5c9f3
-Botão Sucundario -> #000000
-Acento -> #8ebcf0
