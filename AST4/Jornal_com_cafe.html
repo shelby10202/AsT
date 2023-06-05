@@ -1,246 +1,180 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jornal com Café</title>
-  </html>
+  <title>Document</title>
 </head>
-  <style>
+<body>
+<style>
 
-  body{
-        background-color: #010509;
-        }
 
-  .titulo1{
-    font-family: Tahoma, Verdana, sans-serif;
-    font-size: 280%;
-    color: white;
+
+body{
+   background-color: black;
+   margin: 1;
+
+}
+
+
+.cabeçario{
+
+      color: white;
+      font-size: 49px;
+      margin: 10px;
+
+}
+
+.texto{
+  font-family: Tahoma, Verdana, sans-serif;
+    font-size: 40px;
+    color: black;
+    border-radius: 30px;
     text-align: left;
-    margin: 2% 2%;
-  }
-
-   .titulo2{
-    font-family: Tahoma, Verdana, sans-serif;
-    color: #010509;
-    font-size: 200%;
-    text-align: center;
-    margin: 1px 10px;
-    float: right;
-    width: 1000px;
     background-color: #a5c9f3;
-    padding: 15px 70px;
-    border-radius: 15px 50px;
-   
+    padding: 30px;
+    margin: 10px
    }
 
-   .texto1{
+ .noticias{
+
     color: white;
     text-align: center;
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-    }
-  
-  
-  .noticia1{
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    margin: auto;
-    width: 800px;
+    font-size: 30px;
+
  }
 
- .button {
-        align-items: center;
-        background-color: #a5c9f3; 
-        color: black;
-        padding: 1px 56px;
-        text-decoration: none;
-        display: inline-block;
-        transition-duration: 0.4s;
-        width: 10px 100px;
-        margin: 10px 35%;
-        border-radius: 15px;
-         
-}
 
 
 
-    .button1 {
-  box-shadow: 0 8px 16px 0 rgba(53, 7, 53, 0.795), 0 6px 20px 0 r(53, 7, 53, 0.795);
-}
 
-    .button1 {
-        background-color: #a5c9f3; 
-        color: black; 
-        border: 2px solid #a5c9f3;
-        text-align:center;
-        font-size: 26px;
-        width: 1100px 10px;
-        margin: auto 35%;
-         
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+  }
+
+  .button {
+    padding: 19px 74px;
+    background-color: #a5c9f3;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+  }
+
+  .button1 {
+    padding: 19px 74px;
+    background-color: #a5c9f3;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .button1:hover {
+    transform: scale(1.1);
+  }
+  .button2 {
+    padding: 19px 74px;
+    background-color: #a5c9f3;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .button2:hover {
+    transform: scale(1.1);
+  }
+  .button3 {
+    padding: 19px 74px;
+    background-color: #a5c9f3;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .button3:hover {
+    transform: scale(1.1);
+  }
+  .button4 {
+    padding: 19px 74px;
+    background-color: #a5c9f3;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .button4:hover {
+    transform: scale(1.1);
+  }
   
-}
-
-    .button1:hover {
-        background-color: black;
-        color: white; width: 1100px 10px;
-        margin: auto 35%;
-         
- 
-}
-.button4 {
-        align-items: center;
-        background-color: #a5c9f3; 
-        color: black;
-        padding: 1px 56px;
-        text-decoration: none;
-        display: inline-block;
-        transition-duration: 0.4s;
-        width: 10px 100px;
-        margin: 10px 35%;
-        border-radius: 15px;
-         
-}
 
 
 
-    .button2 {
-  box-shadow: 0 8px 16px 0 rgba(53, 7, 53, 0.795), 0 6px 20px 0 r(53, 7, 53, 0.795);
-}
-
-    .button2 {
-        background-color: #a5c9f3; 
-        color: black; 
-        border: 2px solid #a5c9f3;
-        text-align:center;
-        font-size: 26px;
-        width: 1100px 10px;
-        margin: auto 35%;
-         
-  
-}
-
-    .button2:hover {
-        background-color: black;
-        color: white; width: 1100px 10px;
-        margin: auto 35%;
-         
- 
-}
-.button5 {
-        align-items: center;
-        background-color: #a5c9f3; 
-        color: black;
-        padding: 1px 56px;
-        text-decoration: none;
-        display: inline-block;
-        transition-duration: 0.4s;
-        width: 10px 100px;
-        margin: 10px 35%;
-        border-radius: 15px;
-         
-}
+</style>  
+</body>
+</html>
 
 
+<h1 class="cabeçario">Jornal com Café</h1>
 
-    .button3 {
-  box-shadow: 0 8px 16px 0 rgba(53, 7, 53, 0.795), 0 6px 20px 0 r(53, 7, 53, 0.795);
-}
+<br>
+<br>
 
-    .button3 {
-        background-color: #a5c9f3; 
-        color: black; 
-        border: 2px solid #a5c9f3;
-        text-align:center;
-        font-size: 26px;
-        width: 1100px 10px;
-        margin: auto 35%;
-         
-  
-}
-
-    .button3:hover {
-        background-color: black;
-        color: white; width: 1100px 10px;
-        margin: auto 35%;
-         
- 
-}
+<br>
 
 
-  </style>
-
-<hand>
-  <body>
-    <div class="titulo1">
-
-      <p> Jornal Com Café &#127861;&#127861;</p>
-
-    </div>
-
-    <div class="titulo2">
-
-      <p>Sua fonte mais confiável e rapida do colégio Teresa Gil de Moura!</p>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
- 
-    <br>
-    <br>    
+<h2 class="texto">Sua fonte mais confiável e rapida do colégio 
+  Teresa Gil de Moura!</h2>
 
 
-    
-    <br>
-    <br>
- 
-    <div class="texto1">
-      <h1>Noticias 05/2023</h1>
-      <br>
-      
+  <p class="noticias">Aluno de 14 anos de idade entra com faca e simulacro na sala de aula em CEU na região de Perus, na zona oeste da cidade de São Paulo.</p>
 
-    <div class="noticia1">
-      <p>Aluno de 14 anos de idade entra com faca e simulacro na sala de aula em CEU na região de Perus, na zona oeste da cidade de São Paulo.</p>
-    </div>
+<div class="container">
+<a href="Noticia1.html" class="button">Confira na integra!</a>
+</div>
 
-    <br>
-    <br>
-
-    <a href="Noticia1.html" class="button button1">Confira na íntegra</a> <!--Colocar a noticia-->
-
-    <br>
-    <br>
-   
-    <div class="noticia1">
-      <p>A Prefeitura está aplicando um montante de R$ 130 milhões em <br> projetos de prevenção e controle de enchentes na região de Perus.</p>
-    </p>
-    
-    <br>
-    
-    </div>
-    <a href="Noticia2.html" class="button4 button2">Confira na íntegra</a> <!--Colocar a noticia-->
-    </div>
-
-   <div class="noticia1" >
-    <p>Shows da Virada Cultural 2023 em São Paulo</p>
-    <a href="Noticia3.html" class="button5 button2">Confira na íntegra</a>
-   </div>
+<p class="noticias">A Prefeitura está aplicando um montante de R$ 130 milhões em projetos de prevenção e controle de enchentes na região de Perus.</p>
 
 
+<div class="container">
+  <a href="Noticia2.html" class="button1">Confira na integra!</a>
+</div>
+
+<p class="noticias">Shows da Virada Cultural 2023 em São Paulo</p>
+
+<div class="container">
+  <a href="Noticia3.html" class="button2">Confira na integra!</a>
+</div>
 
 
+<p class="noticias">GTA 5 recebe atualização muito desejada após 10 anos de espera pelos fãs!</p>
+<div class="container">
+  <a href="Noticia5.html" class="button3">Confira na integra!</a>
+</div>
 
 
-
-
-
-
-
-  </body>
-</hand>
+<p class="noticias" >O que já está confirmado para a Summer Game Fest 2023?</p>
+<div class="container">
+  <a href="Noticia4.html" class="button4">Confira na integra!</a>
+</div>
