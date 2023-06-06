@@ -46,31 +46,37 @@ body{
 }
 
 
-.topnav {
-  overflow: hidden;
- 
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
+.button-pair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
 
-.topnav a {
-  border: none;
+.button {
+  padding: 70px 90px;
+  margin: 19px;
+  background-color: #F61499;
   color: white;
-  margin: 0px auto;
+  border: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  padding: 90px 190px;
+  cursor: pointer;
   transition-duration: 0.4s;
-  cursor: pointer; 
 }
 
-
-.topnav a:hover {
-  background-color: #E707CC ;
-  color: black;
+.button:hover {
+  background-color: black;
 }
-
 
 
 
@@ -83,31 +89,37 @@ body{
 
  
 
-<div class="cabeçario" class="top">
+<div class="cabeçario" class="topnav">
   <h1>AsT</h1>
 </div>
 <br>
-<div class="topnav" class="texto">
-  <a href="AST4/Jornal_com_cafe.html"><svg width="42" height="42" class="Button" fill="none" stroke="#ffffff"
-     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+
+    
+<div class="button-container">
+  <div class="button-pair">
+    <button class="button"><svg width="31" height="31" fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
     <path d="M14 2v6h6"></path>
     <path d="M16 13H8"></path>
     <path d="M16 17H8"></path>
     <path d="M10 9H8"></path>
-    </svg> 
-    
-  <a href="#"><svg width="42" height="42" class="Button" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
-     stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="m4 17 6-6-6-6"></path>
-    <path d="M12 19h8"></path>
-  </svg></a>
-  <a href="AST4/AST-4.html"><svg width="42" height="42" class="Button" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" 
-    stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  </svg></button>
+
+    <button class="button"><svg width="31" height="31" fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-  </svg></a>
+  </svg></button>
+
+  </div>
+
+
+  <button class="button"><svg width="31" height="31" fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="m4 17 6-6-6-6"></path>
+    <path d="M12 19h8"></path>
+  </svg></button>
 </div>
+
 
 <br>
 
