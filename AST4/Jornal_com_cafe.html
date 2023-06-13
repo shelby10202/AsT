@@ -27,7 +27,7 @@ body{
 }
 
 .texto{
-  font-family: Tahoma, Verdana, sans-serif;
+    font-style: normal;
     font-size: 40px;
     color: black;
     border-radius: 30px;
@@ -45,91 +45,58 @@ body{
 
  }
 
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.box {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 10px;
+  background-color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
 
+.box:hover {
+  transform: translateY(-10px);
 
+}
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 16vh;
+img {
+  width: 100%;
+  height: auto;
+}
+
+.box{
+   font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .box {
+    width: 250px;
+    height: 250px;
   }
+}
 
-  .button {
-    padding: 19px 74px;
-    background-color: #a5c9f3;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: transform 0.3s;
+@media (max-width: 480px) {
+  .box {
+    width: 100%;
+    height: 250px;
+    margin: 10px 0;
   }
+}
 
-  .button:hover {
-    transform: scale(1.1);
-  }
-
-  .button1 {
-    padding: 19px 74px;
-    background-color: #a5c9f3;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-
-  .button1:hover {
-    transform: scale(1.1);
-  }
-  .button2 {
-    padding: 19px 74px;
-    background-color: #a5c9f3;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-
-  .button2:hover {
-    transform: scale(1.1);
-  }
-  .button3 {
-    padding: 19px 74px;
-    background-color: #a5c9f3;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-
-  .button3:hover {
-    transform: scale(1.1);
-  }
-  .button4 {
-    padding: 19px 74px;
-    background-color: #a5c9f3;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-
-  .button4:hover {
-    transform: scale(1.1);
-  }
-  
-
-
+ 
 
 </style>  
 </body>
@@ -148,33 +115,46 @@ body{
   Teresa Gil de Moura!</h2>
 
 
-  <p class="noticias">Aluno de 14 anos de idade entra com faca e simulacro na sala de aula em CEU na região de Perus, na zona oeste da cidade de São Paulo.</p>
+  <div class="container" class="box">
+    <a href="Noticia1.html" target="_blank" class="box">
+      <img src="ceuperus.png" alt="Imagem 1">
+      <p>Aluno de 14 anos de idade entra com faca e simulacro na sala de aula em CEU na região de Perus, na zona oeste da cidade de São Paulo.</p>
+    </a>
 
-<div class="container">
-<a href="Noticia1.html" class="button">Confira na integra!</a>
+
+
+
+    <a href="Noticia3.html" target="_blank" class="box">
+      <img src="virada.jpg" alt="Imagem 2">
+      <p>Shows da Virada Cultural 2023 em São Paulo</p>
+    </a>
+
+
+    <a href="Noticia5.html" target="_blank" class="box">
+      <img src="gta-online.webp" alt="Imagem 3">
+      <p>GTA 5 recebe atualização muito desejada após 10 anos de espera pelos fãs!</p>
+    </a>
+
+
+
+    <a href="Noticia4.html" target="_blank" class="box">
+      <img src="i747894.webp" alt="Imagem 4">
+      <p>O que já está confirmado para a Summer Game Fest 2023?</p>
+    </a>
+
+
+
+    <a href="Noticia2.html" target="_blank" class="box">
+      <img src="obrasperus.jpeg" alt="Imagem 5">
+      <p>A Prefeitura está aplicando um montante de R$ 130 milhões em projetos de prevenção e controle de enchentes na região de Perus.</p>
+    </a>
+
+
+
+    <a href="url-da-outra-aba6" target="_blank" class="box">
+      <img src="gato.gif" alt="Imagem 6">
+      <p>Em breve...</p>
+    </a>
 </div>
 
-<p class="noticias">A Prefeitura está aplicando um montante de R$ 130 milhões em projetos de prevenção e controle de enchentes na região de Perus.</p>
 
-
-<div class="container">
-  <a href="Noticia2.html" class="button1">Confira na integra!</a>
-</div>
-
-<p class="noticias">Shows da Virada Cultural 2023 em São Paulo</p>
-
-<div class="container">
-  <a href="Noticia3.html" class="button2">Confira na integra!</a>
-</div>
-
-
-<p class="noticias">GTA 5 recebe atualização muito desejada após 10 anos de espera pelos fãs!</p>
-<div class="container">
-  <a href="Noticia5.html" class="button3">Confira na integra!</a>
-</div>
-
-
-<p class="noticias" >O que já está confirmado para a Summer Game Fest 2023?</p>
-<div class="container">
-  <a href="Noticia4.html" class="button4">Confira na integra!</a>
-</div>
