@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  
+
+
+
+<style>
+
+
+body {
+  background-color: #000;
+  color: #00FF00;
+  font-family: 'Courier New', monospace;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+.Texto_de_entrada{
+
+    text-align: left;
+    color: white;
+    margin-top: 30px;
+    margin: 30px;
+}
+
+.titulo{
+  color: white;
+  margin-top: 80px;
+  margin: 30px;
+  
+}
+
+.texto{
+  color: #00FF00;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 10px;
+  background-color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.box{
+   font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .box {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 90%;
+    height: 350px;
+    margin: 10px 0;
+    margin-top: 90px;
+  }
+}
+
+.titulo2{
+  margin-top: 120px;
+  text-align: center;
+  color: white;
+
+
+
+}
+
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="#">L-CyberSafe</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Quem somos</a></li>
+      <li><a href="#">Artigos</a></li>
+      <li><a href="#">AST</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+
+<h1 class="titulo">Bem-vindo ao nosso site de Tecnologia da Informação e Cybersegurança da AsT! </h1>
+
+ <div class="Texto_de_entrada">
+
+
+  <p>Nosso objetivo é fornecer a você informações atualizadas e relevantes sobre os desafios e avanços da área de TI e Cybersegurança. Vivemos em um mundo digital cada vez mais conectado, onde a proteção de dados e a segurança da informação se tornaram uma prioridade essencial para indivíduos, empresas e governos. <br><br>
+  
+  Em nosso site, você encontrará uma ampla gama de artigos, guias e recursos que abrangem uma variedade de tópicos relacionados à TI e Cybersegurança. Cobrimos desde fundamentos básicos de segurança até tópicos mais avançados, como inteligência artificial e aprendizado de máquina aplicados à segurança cibernética. <br><br>
+  
+  Agradecemos por visitar nosso site e esperamos que você encontre as informações valiosas e práticas de que precisa. Não hesite em entrar em contato conosco caso tenha alguma dúvida ou sugestão. Juntos, podemos construir um ambiente digital mais seguro e protegido.</p>
+  <br>
+  <p class="texto">"Hello Word"</p>
+</div>  
+
+
+
+<h1 class="titulo2">Artigos</h1>
+
+<div class="container" class="box">
+<a href="Anonumus.html" target="_blank" class="box">
+  <img src="anonymous.gif" alt="Imagem 2">
+  <p>O que são os Anonymous?.</p>
+</a>
+
+<a href="#" target="_blank" class="box">
+  <img src="kali.jpg" alt="Imagem 2">
+  <p>Kali Linux, o sistema operacional dos Hackers.</p>
+</a>
+
+<a href="#" target="_blank" class="box">
+  <img src="servidores.jpg" alt="Imagem 2">
+  <p>Como funciona os servidores, internet e o computador. </p>
+</a>
+
+<a href="#" target="_blank" class="box">
+  <img src="tecnicas.gif" alt="Imagem 2">
+  <p>Tecnicas Hackers e como se proteger. </p>
+</a>
+</div>
+
+</body>
+</html>
+
+
