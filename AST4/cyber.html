@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+  
+
+
+
 <style>
+
 
 body {
   background-color: #000;
+  color: #00FF00;
   font-family: 'Courier New', monospace;
 }
 
@@ -73,41 +79,105 @@ nav {
   }
 }
 
-.titulo{
-  color: #0de029;
-  margin-top: 90px;
-  margin: 30px;
-  }
-
-  .titulo2{
-  font-size: 50px;
-  color: white;
-  margin-top: 0px;
-  margin: 10px;
-  text-align: center;
-  }
-
-
 
 .Texto_de_entrada{
-font-size: 20px;
-text-align: left;
-color: white;
-margin-top: 30px;
-margin: 30px;
+
+    text-align: left;
+    color: white;
+    margin-top: 30px;
+    margin: 30px;
 }
 
-.img-responsive {
-  max-width: 100%;
+.titulo{
+  color: white;
+  margin-top: 80px;
+  margin: 30px;
+  
+}
+
+.texto{
+  color: #00FF00;
+
+}
+
+.container {
+  margin-left: 20px; /* Margem à esquerda */
+}
+
+h1 {
+  margin-bottom: 20px; /* Margem inferior */
+}
+
+.box {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  background-color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  margin-right: 20px; /* Margem entre as boxes */
+  margin-bottom: 20px; /* Margem inferior das boxes */
+  text-decoration: none; /* Remover decoração de link */
+  color: inherit; /* Herdar cor do texto do container pai */
+}
+
+.box:last-child {
+  margin-right: 0; /* Remover margem na última box */
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box a {
+  text-decoration: none; /* Remover decoração de link */
+}
+
+img {
+  width: 100%;
   height: auto;
+}
+
+p {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+.box{
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .box {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 90%;
+    height: 350px;
+    margin: 10px 0;
+    margin-top: 90px;
+  }
+}
+
+.titulo2{
+  margin-top: 120px;
+  text-align: center;
+  color: white;
 }
 
 
 
 </style>
 
-
-<nav>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav>
     <div class="logo">
       <a href="#">L-CyberSafe</a>
     </div>
@@ -122,64 +192,71 @@ margin: 30px;
       <div class="line3"></div>
     </div>
   </nav>
- 
-
- <h1 class="titulo2"> Anonymous</h1>
 
 
-  <img src="bandeira.png" alt="Imagem Responsiva" class="img-responsive">
+<h1 class="titulo">Bem-vindo ao nosso site de Tecnologia da Informação e Cybersegurança da AsT! </h1>
 
-  <h1 class="titulo"> Anonymous</h1>
-
-<p class="Texto_de_entrada"> Resumidamente os Anonymous é um grupo não identificado, uma espécie de coletivo hacker, constantemente são notícia desde seu início 
-    em atividades benéficas à liberdade e ataques considerados “criminosos”. <br>
-    <br>
-    Na web, são considerados o grupo hacktivista mais famoso do mundo. Alguns veículos de imprensa os tratam apenas como o grupo de hackers não-governamental mais poderoso do mundo. Em uma de suas últimas atividades “benéficas”, 
-    o Anonymous fechou centenas de contas de mídia social de usuários vinculados ao Estado Islâmico. </p>
-
-<h1 class="titulo"> A máscara</h1>
-
-<p class="Texto_de_entrada"> A máscara é uma representação estilizada de Guy Fawkes, um dos principais membros da Conspiração da Pólvora, uma tentativa de explodir a Câmara dos Lordes em Londres em 5 de novembro de 1605. <br>
-    <br>
-
-    O ilustrador David Lloyd criou uma representação com um rosto sorridente, bochechas vermelhas, um bigode largo que se curva para cima nas pontas e uma barba pontiaguda vertical. Esse design passou a ser amplamente associado a protestos depois de ser usado como elemento central na história em quadrinhos "V de Vingança" (1982-1989) e sua adaptação cinematográfica lançada em 2005.<br>
-    <br>
-    
-    Após sua popularização em fóruns online, a máscara se tornou um símbolo reconhecido do grupo hacktivista Anonymous. Ela foi utilizada no Projeto Chanology, no movimento Occupy, Anonymous for the Voiceless e em outros protestos anti-establishment ao redor do mundo.</p>
-
-<h1 class="titulo">Operações/Feitos</h1>
+ <div class="Texto_de_entrada">
 
 
-<p class="Texto_de_entrada"> 
-  – Operação Single Gateway <br>
-    Alvo: Governo da Tailândia <br>
-    Motivo: Censura por parte do governo<br>
-    Prejuizos: Sites fora do ar e vazamento de dados<br>
-    <br>
-    <br>
-   – Operação Hong Kong<br>
-    Alvo: Governo de Hong Kong<br>
-    Motivo: Uso da força policial contra manifestantes<br>
-    Prejuizos: Roubo de dados e captura de sites<br>
-    <br>
-    <br>
+  <p>Nosso objetivo é fornecer a você informações atualizadas e relevantes sobre os desafios e avanços da área de TI e Cybersegurança. Vivemos em um mundo digital cada vez mais conectado, onde a proteção de dados e a segurança da informação se tornaram uma prioridade essencial para indivíduos, empresas e governos. <br><br>
   
-   – Protestos contra as eleições iranianas de 2009<br>
-     Alvo: Governo do Irã<br>
-     Motivo: Fraude eleitoral <br>
-     Prejuizos: Quebra da censura roubo de dados e sites fora do ar<br>
-     <br>
-     <br>
-   – Lei Filipina de prevenção de crimes cibernéticos de 2012<br>
-     Alvo: Governo das Filipinas<br>
-     Motivo: Revisão da lei do crime cibernetico (censura)<br>
-     Prejuizos: Sites capturados, roubo de dados e sites fora do ar<br>
-     <br>
-     <br>
-   
-   – Vazamentos de e-mails do exército chileno<br>
-      Alvo: Governo do Chile <br>
-      Motivo: Invertigação<br>
-      Prejuizos: Roubo de dados e invasão a contas de militares <br></p>
+  Em nosso site, você encontrará uma ampla gama de artigos, guias e recursos que abrangem uma variedade de tópicos relacionados à TI e Cybersegurança. Cobrimos desde fundamentos básicos de segurança até tópicos mais avançados, como inteligência artificial e aprendizado de máquina aplicados à segurança cibernética. <br><br>
+  
+  Agradecemos por visitar nosso site e esperamos que você encontre as informações valiosas e práticas de que precisa. Não hesite em entrar em contato conosco caso tenha alguma dúvida ou sugestão. Juntos, podemos construir um ambiente digital mais seguro e protegido.</p>
+  <br>
+  <p class="texto">"Hello Word"</p>
+
+
+ <br>
+ <br>
+ <br>
+ <br>
+
+</div>  
+<div class="container">
+  <h1 class="titulo">Cybersegurança</h1>
+  
+  
+  <div class="box">
+    <a href="Anonumus.html">
+    <img src="anonymous.gif" alt="Imagem 1">
+    <p>O que são os anonymous?</p>
+  </div>
+
+
+  <div class="box">
+    <a href="seu-link-aqui">
+    <img src="kali.jpg" alt="Imagem 2">
+    <p>Kali Linux, o sistema operacional dos Hackers.</p>
+  </div>
+
+
+  <div class="box">
+    <a href="seu-link-aqui">
+    <img src="servidores.jpg" alt="Imagem 3">
+    <p>Como funciona os servidores, internet e o computador.</p>
+  </div>
+
+
+  <div class="box">
+    <a href="seu-link-aqui">
+    <img src="tecnicas.gif" alt="Imagem 3">
+    <p>Tecnicas Hackers e como se proteger.</p>
+  </div>
+
+
+  <div class="box">
+    <a href="######">
+    <img src="MRrobot.gif" alt="Imagem 3">
+    <p>Em breve...</p>
+  </div>
+
+
+</div>
+
+
+</body>
+</html>
 
 
