@@ -12,7 +12,7 @@ logo depois também adicionariamos uma parte de artigos de tecnologia no projeto
 
 
 
-(Obs: Coloquei o Css, Html e o JavaScript junto, pois foi uma maneira mais facil de interpretar.)
+(Obs: Coloquei o Css, Html e o JavaScript junto pois foi uma maneira mais facil de interpretar.)
 
 
 
