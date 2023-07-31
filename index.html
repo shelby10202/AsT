@@ -1,34 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=>, initial-scale=1.0">
-  <title>Inical</title>
-</head>
-<body>
-  </html>
-  <style>
+    <title>AST/TGM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="_cf971a49-16ec-4330-bc42-e555a5a42baa-removebg-preview.png" type="image/png">
 
-body{
-     background-color: black;  
-     margin: 0;
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
 
-.texto{
+.logo-bar {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    
+}
+
+.logo-bar.active {
+    height: 190px; /* Altura da barra após o movimento */
+}
+
+.logo-bar > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-bar > div img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    text-decoration: none;
+    
+}
+
+.logo-middle {
+    flex-grow: 2;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.button {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border: none;
   color: white;
-  font-size: 30px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
   
 }
 
-.cabeçario {
-  font-size: 25px;
-  color: #e7eedd;
-  padding: 2px 150px;
-  text-align: center;
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid white;
 }
 
-.explicao{
+.button:hover{
+  background-color: white; 
+  color: black; 
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .logo-bar.active {
+        height: 100px; 
+    }
+
+    .logo-bar > div img {
+        max-height: 40px; 
+    }
+
+    .logo-middle {
+        font-size: 18px;
+    }
+
+    .buttons button {
+        margin-left: 5px;
+
+    }
+}
+
+   .teste{
+    color: white;
+   }
+
+   .explicao{
   text-align: left;
   margin: 70px;
   margin-top: 30px;
@@ -36,133 +115,95 @@ body{
   font-size: 30px
 
 }
-.explico2 {
-  text-align: left;
-  margin: 80px;
-  margin-top: 0px;
-  color:white;
-  font-size: 35px
 
-}
-.button-container {
-      text-align: center;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 90px 224px;
-      background-color: #ff00ff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 2px;
-      margin: 5px;
-      cursor: pointer;
-      opacity: 0;
-      transform: translateY(-20px);
-      transition: transform 0.3s ease, opacity 0.3s ease;
-      width: 150px; 
-      text-align: center; 
-      font-family: Noto Sans, sans-serif;
-    }
-
-    .button.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    
-    .button:hover {
-      background-color: black;
-      font-family: Noto Sans, sans-serif ;
-    }
-
-
-    @media (max-width: 768px) {
-      .button {
-        padding: 70px 204px;
-        width: 100px; 
-        margin-top: 20px;
-      }
-    }
-    @media (max-width: 512px) {
-      .button {
-        padding: 40px 130px;
-        width: 100px; 
-        margin-top: 20px;
-      }
-    }
+</style>
 
 
 
-
-  </style>
-</body>
-
+</head>
 <body>
+    <div class="logo-bar">
+        <div class="logo-left">
+            <img src="_cf971a49-16ec-4330-bc42-e555a5a42baa-removebg-preview.png" alt="Logo 1">
+        </div>
+         
+        <div class="logo-middle">
+          <h1>  AST Company</h1>
+        </div>
+      
+        <div class="button">
+            <a href="#Textos_de_Explicação"class="smooth-scroll"> Projetos </a>
+        </div>
+    </div>
 
 
- 
-
-<div class="cabeçario" class="topnav">
-  <h1>AsT</h1>
-</div>
-<br>
-<br>
 
 
-<div class="button-container">
-  <a class="button" href="AST4/Jornal_com_cafe.html">Jornal com Café</a>
-  <a class="button" href="AST4/AST-4.html">AST-4</a>
-  <a class="button" href="AST4/cyber.html">L-CyberSafe</a>
-</div>
 
 
-<br>
-<br>
-<br>
-<br>
+    <br> <br> <br>
 
-<div class="explicao">
-
-
-<svg width="42" height="42" class="Button" fill="none" stroke="#e01074" stroke-linecap="round" stroke-linejoin="round"
-stroke-width="2" viewBox="1 0 24 21" xmlns="http://www.w3.org/2000/svg">
- <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
- <path d="M14 2v6h6"></path>
- <path d="M16 13H8"></path>
- <path d="M16 17H8"></path>
- <path d="M10 9H8"></path>
-</svg> <p>Jornal com Café é a parte jornalistica da AST, na pagina em você ira encontrar noticias do colégio e do bairro com rapidez e veracidade.</p>
-
-</div>
-
-<div class="explicao">
-<svg width="42" height="42" class="Button" fill="none" stroke="#e01074" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-</svg> <p>AsT-4 é um projeto com fins educacionais focado em ajudar o aluno, aqui você encontrara a grade horária, lições pendentes.</p>
-</div>
-
+    <br>
+    <br>
+    
 
 
 
 <div class="explicao">
-  <svg width="42" height="42" class="Button" fill="none" stroke="#e01074" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="m4 17 6-6-6-6"></path>
-    <path d="M12 19h8"></path>
-  </svg><p>L-CyberSafe a parte de Cybersegurança e TI da AST</p>
-</div>
+    <h1>Bem-vindo a AST</h1>
+
+    <br>
+
+    <p>AST é um site inovador e abrangente voltado para o universo educacional, projetado para fornecer aos alunos, pais e educadores uma plataforma única para acessar uma variedade de recursos valiosos.</p>
+            
+    <br>
+
+    <p>
+       Jornal Com Café:<br> <br>Também oferecemos um Jornal Escolar digital, trazendo notícias e eventos emocionantes diretamente da comunidade escolar. Este espaço permite que alunos e professores compartilhem conquistas acadêmicas, projetos interessantes, esportes, artes e outras realizações que ocorrem dentro e fora da sala de aula. O Jornal Escolar da AST é uma maneira envolvente de promover o espírito escolar e fortalecer os laços da comunidade educacional.</p>
+       <a href="AST4/Jornal_com_cafe.html">Confira!!!</a>
+    <br>
+    <br>
+    <br>
+
+    <p id="Textos_de_Explicação">L-CyberSafe: <br> <br> Como parte de seu compromisso com a aprendizagem contínua, a AST apresenta uma seção dedicada a Artigos de Tecnologia da Informação (TI). Esses artigos são escritos por especialistas no campo da tecnologia e são cuidadosamente selecionados para manter alunos e educadores atualizados sobre as últimas tendências, dicas e truques tecnológicos. Essa seção é uma fonte valiosa de conhecimento que complementa o currículo e prepara os estudantes para um futuro cada vez mais digital.
+    </p> <a href="AST4/cyber.html">Confira!!!</a>
+    <br>
+    <br>
+
+    <br>
+
+    <p> AST-4 é um portal educacional completo que capacita e enriquece a experiência de aprendizado. Seu compromisso é fornecer uma plataforma segura, informativa e interativa para toda a comunidade educacional. Explore nossos recursos e aproveite ao máximo as ferramentas disponíveis para impulsionar o sucesso acadêmico e promover uma conexão mais forte entre todos os envolvidos na jornada educacional.</p>
+    <a href="AST4/AST-4.html">Confira!!!</a>
+
+    </div>
 
 
-  
+
+
+</body>
+</html>
 <script>
+    // JavaScript para adicionar a funcionalidade de rolagem suave ao link
+    document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".button");
-    setTimeout(function() {
-      buttons.forEach(button => button.classList.add("show"));
-    }, 1000);
-  });
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 </script>
 
-</body>
+<script>
+  window.addEventListener('load', function () {
+    const logoBar = document.querySelector('.logo-bar');
+
+    // Adiciona a classe 'active' à barra de logos após um pequeno atraso
+    setTimeout(function() {
+        logoBar.classList.add('active');
+    }, 900); // Atraso de 500ms para iniciar o movimento da barra
+});
+
+
+</script>
