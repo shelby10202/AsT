@@ -1,105 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-<style>
+  <style>
+    body {
+      background-color: black;
+      margin: 1;
+
+    }
 
 
-
-body{
-   background-color: black;
-   margin: 1;
-
-}
-
-
-.cabeçario{
+    .cabeçario {
 
       color: white;
       font-size: 49px;
       margin: 10px;
 
-}
+    }
 
-.texto{
-    font-style: normal;
-    font-size: 40px;
-    color: black;
-    border-radius: 30px;
-    text-align: left;
-    background-color: #a5c9f3;
-    padding: 30px;
-    margin: 10px
-   }
+    .texto {
+      font-style: normal;
+      font-size: 40px;
+      color: black;
+      border-radius: 30px;
+      text-align: left;
+      background-color: #a5c9f3;
+      padding: 30px;
+      margin: 10px
+    }
 
- .noticias{
+    .noticias {
 
-    color: white;
-    text-align: center;
-    font-size: 30px;
+      color: white;
+      text-align: center;
+      font-size: 30px;
 
- }
+    }
 
- .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-.box {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-  margin: 10px;
-  background-color: black;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
+    .box {
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+      margin: 10px;
+      background-color: black;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
 
-.box:hover {
-  transform: translateY(-10px);
+    .box:hover {
+      transform: translateY(-10px);
 
-}
+    }
 
-img {
-  width: 100%;
-  height: auto;
-}
+    img {
+      width: 100%;
+      height: auto;
+    }
 
-.box{
-   font-family: "Gill Sans", sans-serif;
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-}
+    .box {
+      font-family: "Gill Sans", sans-serif;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+    }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .box {
-    width: 250px;
-    height: 250px;
-  }
-}
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .box {
+        width: 250px;
+        height: 250px;
+      }
+    }
 
-@media (max-width: 480px) {
-  .box {
-    width: 100%;
-    height: 350px;
-    margin: 10px 0;
-  }
-}
+    @media (max-width: 480px) {
+      .box {
+        width: 100%;
+        height: 350px;
+        margin: 10px 0;
+      }
+    }
 
- 
+    .data {
+      color: white;
+      text-align: center;
+    }
 
-</style>  
+    .lista {
+      list-style: none;
+      width: 100%;
+      max-width: 400px;
+      padding: 0;
+    }
+
+    .lista-item {
+      margin-right: 35px;
+      margin-left: 1;
+      color: white;
+      overflow: hidden;
+      max-height: 98px;
+      transition: max-height 0.5s ease;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-decoration: none;
+      text-align: center;
+
+
+    }
+
+    .lista-item.expandido {
+      max-height: 200px;
+      /* Ajuste a altura máxima desejada */
+      text-decoration: none;
+    }
+
+    .lista-item-content {
+      padding: 50px;
+      background-color: black;
+      border: 1px solid #ccc;
+      text-decoration: none;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
 </body>
+
 </html>
 
 
@@ -111,50 +152,74 @@ img {
 <br>
 
 
-<h2 class="texto">Sua fonte mais confiável e rapida do colégio 
+<h2 class="texto">Sua fonte mais confiável e rapida do colégio
   Teresa Gil de Moura!</h2>
 
-
-  <div class="container" class="box">
-    <a href="Noticia1.html" target="_blank" class="box">
-      <img src="ceuperus.png" alt="Imagem 1">
-      <p>Aluno de 14 anos de idade entra com faca e simulacro na sala de aula em CEU na região de Perus, na zona oeste da cidade de São Paulo.</p>
-    </a>
+<br>
+<br>
 
 
+<h1 class="data"> Matérias 09/23</h1>
 
 
-    <a href="Noticia3.html" target="_blank" class="box">
-      <img src="virada.jpg" alt="Imagem 2">
-      <p>Shows da Virada Cultural 2023 em São Paulo</p>
-    </a>
+<ul>
+  <li class="lista-item">
+    <div class="lista-item-content">
+      Esportes
+      <br>
+      <br>
+      <a href="">Turbulência no Futebol: Craque Neto Revela Torcida pelo São Paulo na Final da Copa do Brasil</a>
+    </div>
+  </li>
+  <li class="lista-item">
+    <div class="lista-item-content">
+      Clima
+      <br>
+      <br>
+      <a href="/0001.html"> Recente onda de calor no Brasil pode afetar saúde dos brasileiros.</a>
+      <br>
+      <br>
+      <a href="/0007.html"> Alerta Meteorológico: Onda de Calor Extrema no Brasil e Medidas de Proteção Necessárias</a>
+      <br>
+      <br>
+    </div>
+  </li>
+  <li class="lista-item">
+    <div class="lista-item-content">
+      Politica
+      <br>
+      <br>
+      <a href="/0002.html"> Impacto das Informações Falsas nas Eleições Brasileiras: Um Desafio para a Democracia</a>
+      <br>
+      <br>
+      <a href="/0003.html">Batalha geopolítica sobre gigante represa que confere mudanças ao rio Nilo</a>
+      <br>
+      <br>
+      <a href="/0005.html">Presidente Lula se recupera após cirurgia e recebe alta em Brasília</a>
+    </div>
+  </li>
+  <li class="lista-item">
+    <div class="lista-item-content">
+      Jogos e Entretenimento
+      <br>
+      <br>
+      <a href="/0004.html">Principais lançamentos de jogos nesta semana.</a>
+      <br>
+      <br>
+      <a href="/0006.html">Nosso Sonho conta a história de Claudinho e Buchecha nos cinemas</a>
+    </div>
+  </li>
+
+</ul>
 
 
-    <a href="Noticia5.html" target="_blank" class="box">
-      <img src="gta-online.webp" alt="Imagem 3">
-      <p>GTA 5 recebe atualização muito desejada após 10 anos de espera pelos fãs!</p>
-    </a>
 
+<script>
+  const listaItens = document.querySelectorAll('.lista-item-content');
 
-
-    <a href="Noticia4.html" target="_blank" class="box">
-      <img src="i747894.webp" alt="Imagem 4">
-      <p>O que já está confirmado para a Summer Game Fest 2023?</p>
-    </a>
-
-
-
-    <a href="Noticia2.html" target="_blank" class="box">
-      <img src="obrasperus.jpeg" alt="Imagem 5">
-      <p>A Prefeitura está aplicando um montante de R$ 130 milhões em projetos de prevenção e controle de enchentes na região de Perus.</p>
-    </a>
-
-
-
-    <a href="url-da-outra-aba6" target="_blank" class="box">
-      <img src="gato.gif" alt="Imagem 6">
-      <p>Em breve...</p>
-    </a>
-</div>
-
-
+  listaItens.forEach(item => {
+    item.addEventListener('click', () => {
+      item.parentElement.classList.toggle('expandido');
+    });
+  });
+</script>
